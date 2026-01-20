@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart-RateMyBuy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--this is for star icon-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- navigation -->
+
+   <div class="navbar">
+    <a href="index.html" style="text-decoration: none;">
+        <div class="logo" style="display: flex; margin-bottom: 15px;">TrendView</div>
+    </a>
+    <div class="search-container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <!-- search logo -->
+            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                type="module"></script>
+            <dotlottie-player src="https://lottie.host/f61e4fbe-b514-442b-8259-499c4b4d6c2d/vdvDEw58dg.lottie"
+                background="transparent" speed="1" style="width: 40px; height: 40px" loop
+                autoplay></dotlottie-player>
+            <!-- search logo -->
+        </div>
+    </div>
+    <div class="hamburger-container">
+        <div class="hamburger" onclick="toggleMenu()" style="display: flex; margin-bottom: 13px;">&#9776;</div>
+        <div class="menu" id="menu">
+            <a href="account.html" class="menu-item">
+                <img src="images/profile-user.png" alt="Account">
+                <span>Account</span>
+            </a>
+            <a href="chat.html" class="menu-item">
+                <img src="images/chat.png" alt="Chat">
+                <span>Chat</span>
+            </a>
+            <a href="cart.html" class="menu-item">
+                <img src="images/shopping-bag.png" alt="Cart">
+                <span>Cart</span>
+            </a>
+            <a href="mail.html" class="menu-item">
+                <img src="images/email.png" alt="Notification">
+                <span>Notification</span>
+            </a>
+            <a href="company.html" class="menu-item">
+                <img src="images/consumer-research.png" alt="Company">
+                <span>Company</span>
+            </a>
+            <a href="ForeCasting.html" class="menu-item">
+                <img src="images/product forecasting.png" alt="Company">
+                <span>Product Forecasting</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- navigation -->
+
+        <!-- cart items details -->
+
+        <div class="small-container cart-page" style="background: radial-gradient(#fff, #f3ecec);">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr id="Pt-cart-1">
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/buy-1.jpg">
+                            <div>
+                                <p>Red Printed Tshirt</p>
+                                <small>Price: Rs 299</small><br>
+
+                                <button onclick="removeItem(this)" class="remove-btn"
+                                    style="cursor: pointer;">Remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" id="quantity" min="1" value="1" onchange="updateSubtotal()"></td>
+                    <td id="subtotal">Rs 299</td>
+                </tr>
+                </tr>
+                
+        </div>
+    </div>
+
+
+
+    <!-- cart items details -->
+
+
+
+    <script>
+
+        function removeItem(button) {
+            // Get the row element (tr) of the clicked button
+            let row = button.closest("tr");
+
+            // Remove the row from the table
+            row.remove();
+
+        }
+        function updateSubtotal() {
+            let price = 299; // Price per item
+            let quantity = document.getElementById("quantity").value;
+            let subtotal = price * (quantity ? parseInt(quantity) : 0);
+            document.getElementById("subtotal").innerText = "Rs " + subtotal.toFixed(2);
+        }
+        updateSubtotal();
+
+          //navigation
+          function toggleMenu() {
+                        var menu = document.getElementById("menu");
+                        menu.classList.toggle("menu-visible");
+                    }
+
+
+    </script>
+</body>
+
+
+</html>

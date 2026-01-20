@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product details-RateMyBuy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--this is for star icon-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- navigation -->
+
+    <div class="navbar">
+        <a href="index.html" style="text-decoration: none;">
+            <div class="logo" style="display: flex; margin-bottom: 15px;">TrendView</div>
+        </a>
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <!-- search logo -->
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player src="https://lottie.host/f61e4fbe-b514-442b-8259-499c4b4d6c2d/vdvDEw58dg.lottie"
+                    background="transparent" speed="1" style="width: 40px; height: 40px" loop
+                    autoplay></dotlottie-player>
+                <!-- search logo -->
+            </div>
+        </div>
+        <div class="hamburger-container">
+            <div class="hamburger" onclick="toggleMenu()" style="display: flex; margin-bottom: 13px;">&#9776;</div>
+            <div class="menu" id="menu">
+                <a href="account.html" class="menu-item">
+                    <img src="images/profile-user.png" alt="Account">
+                    <span>Account</span>
+                </a>
+                <a href="chat.html" class="menu-item">
+                    <img src="images/chat.png" alt="Chat">
+                    <span>Chat</span>
+                </a>
+                <a href="cart.html" class="menu-item">
+                    <img src="images/shopping-bag.png" alt="Cart">
+                    <span>Cart</span>
+                </a>
+                <a href="mail.html" class="menu-item">
+                    <img src="images/email.png" alt="Notification">
+                    <span>Notification</span>
+                </a>
+                <a href="company.html" class="menu-item">
+                    <img src="images/consumer-research.png" alt="Company">
+                    <span>Company</span>
+                </a>
+                <a href="ForeCasting.html" class="menu-item">
+                    <img src="images/product forecasting.png" alt="Company">
+                    <span>Product Forecasting</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- navigation -->
+    
+
+        <!-- Analysis -->
+
+        <div class="analysis-container">
+
+            <h3 style="text-align: center;">
+                Dashboard
+            </h3>
+            <div class="analysis"
+                style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;">
+
+                <iframe title="sales_monitoring_Company_Dashboard" width="100%" height="700px"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiODQ1MTI3NzctYjUzMC00NTFmLWJkMmQtMGQzZTRiYTk2Y2JiIiwidCI6ImQ3OWU4ZmUwLTMxNGItNDVlOS05NWMxLWJhYzMwNWYxYjA5ZSJ9"
+                    frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+
+        <!-- Analysis -->
+
+
+
+        <!-- footer -->
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our app</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                       <dotlottie-player src="https://lottie.host/f61e4fbe-b514-442b-8259-499c4b4d6c2d/vdvDEw58dg.lottie" background="transparent" speed="1" style="width: 400px; height: 80px" loop autoplay></dotlottie-player>
+                       <p>Our Purpose Is To Sustainable Make the Plessure and Benefits of sports Accesible to the Many.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupans</li>
+                            <li>Blog Post</li>
+                            <li>Returns Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2025 Our website.</p>
+            </div>
+        </div>
+        <!-- footer -->
+
+
+
+        <script>
+    //navigation
+    function toggleMenu() {
+                        var menu = document.getElementById("menu");
+                        menu.classList.toggle("menu-visible");
+                    }
+        </script>
+</body>
+
+
+</html>

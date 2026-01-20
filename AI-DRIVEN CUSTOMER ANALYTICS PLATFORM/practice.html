@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Image Slider</title>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- navigation bar -->
+              
+<div class="navbar" style="padding: 13px;">
+    <div class="logo" style="display: flex; margin-bottom: 15px;">TrendView</div>
+    <div class="search-container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <!-- search logo -->
+            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                type="module"></script>
+            <dotlottie-player src="https://lottie.host/f61e4fbe-b514-442b-8259-499c4b4d6c2d/vdvDEw58dg.lottie"
+                background="transparent" speed="1" style="width: 40px; height: 40px" loop
+                autoplay></dotlottie-player>
+            <!-- search logo -->
+        </div>
+    </div>
+    <div class="hamburger-container">
+       <a href="account.html"> <div class="profile" style="display: flex;"><img src="images/profile-user.png" width="40px" height="40px" style="padding-top: 10px; padding-right: 10px; cursor: pointer;" ></a>
+        <div class="hamburger" onclick="toggleMenu()" style="display: flex; margin-bottom: 13px;">&#9776;</div>
+    </div>
+        <div class="menu" id="menu">
+            <a href="account.html" class="menu-item">
+                <img src="images/profile-user.png" alt="Account">
+                <span>Account</span>
+            </a>   
+            <a href="chat.html" class="menu-item">
+                <img src="images/chat.png" alt="Chat">
+                <span>Chat</span>
+            </a>   
+            <a href="cart.html" class="menu-item">
+                <img src="images/shopping-bag.png" alt="Cart">
+                <span>Cart</span>
+            </a>  
+            <a href="mail.html" class="menu-item">
+                <img src="images/email.png" alt="Notification">
+                <span>Notification</span>
+            </a>   
+            <a href="company.html" class="menu-item">
+                <img src="images/consumer-research.png" alt="Company">
+                <span>Company</span>
+            </a>    
+            <a href="ForeCasting.html" class="menu-item">
+                <img src="images/product forecasting.png" alt="Company">
+                <span>Product Forecasting</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- navigation bar -->
+
+<!-- slider -->
+
+  <!-- Swiper Slider -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/lobby J.jpg" alt="Slide 1"></div>
+        <div class="swiper-slide"><img src="images/lobby K.jpg" alt="Slide 2"></div>
+        <div class="swiper-slide"><img src="images/lobbyD.jpg" alt="Slide 3"></div>
+        <div class="swiper-slide"><img src="images/lobby E.jpg" alt="Slide 4"></div>
+        <div class="swiper-slide"><img src="images/lobby F.jpg" alt="Slide 5"></div>
+        <div class="swiper-slide"><img src="images/lobby G (2).jpg" alt="Slide 6"></div>
+    </div>
+    
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- Navigation Buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+<!-- slider -->
+
+<!-- offered product -->
+
+
+<div class="offer" style="margin-bottom: 30px;">
+    <h2 class="pt-titile" style="margin-bottom: 0;">Offer</h2>
+    <div class="small-container">
+
+        <div class="row">
+            <div class="col-2">
+
+                <img src="images/bulk-image.jpg" class="offer-img" width="590px" height="600px">
+            </div>
+
+
+            <div class="offer-container">
+                <div>
+                    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                        type="module"></script>
+                    <dotlottie-player
+                        src="https://lottie.host/934a91f1-f342-4df9-b192-b95a83bc13fb/MMyMwtTpgq.lottie"
+                        background="transparent" speed="0.7" style="width: 370px; height: 300px" loop
+                        autoplay></dotlottie-player>
+                </div>
+                <!-- <img src="images/offer-Percentage.png" width="400px" height="320px"> -->
+
+
+                <p style="color: black;">Get our best-selling product now at an exclusive price.</p>
+                <p class="price" style="color: black;">Now Only: Rs 999 <mark
+                        style="background: rgba(222, 65, 8, 0.838); padding: 10px; border-radius: 30px;"><del>Rs
+                            2499</del></mark></p>
+                <p class="timer" style="margin-top: 30px; color: black;">Offer Ends In: <span id="countdown"
+                        style="color: rgb(9, 9, 7); border: 1px solid yellow; padding: 10px; margin: 10px; background: rgba(240, 214, 17, 0.838); border-radius: 30px; margin-top: 30px;">00:00:00</span>
+                </p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- offered products -->
+
+<!-- productes -->
+<div class="small-container">
+    <h2 class="pt-titile">Shirt For Men</h2>
+    <div class="row">
+        <div class="col-4">
+            <a href="productdetails.html"><img src="images/product-1.jpg"></a>
+            <a href="productdetails.html"></a>
+            <h4>Red printed Tshirt</h4></a>
+
+            <p>Rs 299</p>
+
+        </div>
+
+        <div class="col-4">
+            <a href="product2.html"><img src="images/Hoodie.jpg"></a>
+            <h4>Black Hoodie</h4>
+            <div class="rating">
+
+            </div>
+            <p>Rs 999</p>
+
+        </div>
+
+        <div class="col-4">
+            <img src="images/formal shirt.jpg">
+            <h4>Formal Shirt</h4>
+
+            <p>Rs 799</p>
+        </div>
+
+
+        <div class="col-4">
+            <img src="images/coat.jpg">
+            <h4>Coat</h4>
+
+            <p>Rs 2999</p>
+        </div>
+    </div>
+    <h2 class="pt-titile">Pant For Men</h2>
+
+    <div class="row">
+        <div class="col-4">
+            <img src="images/carton-brown-1.jpg" height="300px">
+            <h4>Carton Brown</h4>
+
+            <p>Rs 499</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/polo-fit-3-black.jpg" height="300px">
+            <h4>Polo Fit Black</h4>
+
+            <p>Rs 499</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/polo-fit-3.jpg" height="300px">
+            <h4>Polo Fit Gray</h4>
+
+            <p>Rs 499</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/polo-fit-4.jpg" height="300px">
+            <h4>Polo Fit Light Green</h4>
+
+            <p>Rs 499</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <img src="images/Track-pant-1.jpg">
+            <h4>Track pant</h4>
+
+            <p>Rs 599</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/product-10.jpg">
+            <h4>Black shoe</h4>
+
+            <p>Rs 699</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/product-11.jpg">
+            <h4>White Shoe</h4>
+
+            <p>Rs 999</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/product-12.jpg">
+            <h4>Track pant</h4>
+
+            <p>Rs 399</p>
+        </div>
+    </div>
+
+</div>
+<!-- productes -->
+
+<!-- offered product -->
+
+
+<div class="offer">
+    <h2 class="pt-titile">Offer</h2>
+    <div class="small-container">
+
+        <div class="row">
+            <div class="col-2">
+
+                <img src="images/bulk-image.jpg" class="offer-img" width="590px" height="600px">
+            </div>
+
+
+            <div class="offer-container">
+                <div>
+                    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                        type="module"></script>
+                    <dotlottie-player
+                        src="https://lottie.host/934a91f1-f342-4df9-b192-b95a83bc13fb/MMyMwtTpgq.lottie"
+                        background="transparent" speed="0.7" style="width: 370px; height: 300px" loop
+                        autoplay></dotlottie-player>
+                </div>
+                <!-- <img src="images/offer-Percentage.png" width="400px" height="320px"> -->
+
+
+                <p style="color: black;">Get our best-selling product now at an exclusive price.</p>
+                <p class="price" style="color: black;">Now Only: Rs 999 <mark
+                        style="background: rgba(222, 65, 8, 0.838); padding: 10px; border-radius: 30px;"><del>Rs
+                            2499</del></mark></p>
+                <p class="timer" style="margin-top: 30px; color: black;">Offer Ends In: <span id="countdown"
+                        style="color: rgb(9, 9, 7); border: 1px solid yellow; padding: 10px; margin: 10px; background: rgba(240, 214, 17, 0.838); border-radius: 30px; margin-top: 30px;">00:00:00</span>
+                </p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- offered products -->
+
+<!-- footer -->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player src="https://lottie.host/f61e4fbe-b514-442b-8259-499c4b4d6c2d/vdvDEw58dg.lottie"
+                    background="transparent" speed="1" style="width: 400px; height: 80px" loop
+                    autoplay></dotlottie-player>
+                <p>Our Purpose Is To Sustainable Make the Plessure and Benefits of sports Accesible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupans</li>
+                    <li>Blog Post</li>
+                    <li>Returns Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2025 Our website.</p>
+    </div>
+</div>
+<!-- footer -->
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 1000,  // Auto-slide every 3 seconds
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+//navigation
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("menu-visible");
+        }
+
+
+
+         //offer timing
+
+         function startCountdown(durationInSeconds) {
+            let timer = durationInSeconds;
+            const countdownElement = document.getElementById("countdown");
+
+            function updateTimer() {
+                const hours = Math.floor(timer / 3600);
+                const minutes = Math.floor((timer % 3600) / 60);
+                const seconds = timer % 60;
+                countdownElement.textContent =
+                    `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+                if (timer > 0) {
+                    timer--;
+                    setTimeout(updateTimer, 1000);
+                } else {
+                    countdownElement.textContent = "Offer Expired!";
+                }
+            }
+            updateTimer();
+        }
+
+        startCountdown(7200); 
+        
+ 
+    </script>
+</body>
+</html>
